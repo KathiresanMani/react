@@ -1,4 +1,4 @@
-import { useContext, useState, useRef } from 'react';
+import { useContext, useState, useRef, useEffect } from 'react';
 import { Container, Col, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import Filter from '../components/filter';
@@ -25,6 +25,10 @@ export default function Search() {
     const properties = useContext(PropertiesContext);
     const [loader, setLoader] = useState(true);
     const imgCount = useRef(0);
+
+    useEffect(() => {
+        document.title = 'Search Page';
+    }, []);
 
     const checkLoadedImage = () => {
         imgCount.current += 1;
