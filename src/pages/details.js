@@ -26,11 +26,11 @@ const PropertyAttributes = props => {
                     </tr>
                     <tr>
                         <td>Brochure:</td>
-                        <td><a href={props.Brochure && props.Brochure[0] ? props.Brochure[0].url : ''} target="_blank">Download Brochure</a></td>
+                        <td><a href={props.Brochure && props.Brochure[0] ? props.Brochure[0].url : ''} target="_blank" rel="noreferrer">Download Brochure</a></td>
                     </tr>
                     <tr>
                         <td>Floor Plan:</td>
-                        <td><a href={props.Floor_Plans && props.Floor_Plans[0] ? props.Floor_Plans[0].url : ''} target="_blank">View Floor Plan</a></td>
+                        <td><a href={props.Floor_Plans && props.Floor_Plans[0] ? props.Floor_Plans[0].url : ''} target="_blank" rel="noreferrer">View Floor Plan</a></td>
                     </tr>
                 </tbody>
             </Table>
@@ -71,6 +71,10 @@ export default function Details(props) {
     const [property, setProperty] = useState([]);
     const [images, setImages] = useState([]);
     const [loader, setLoader] = useState(true);
+
+    useEffect(() => {
+        document.title = 'Details Page';
+    }, []);
 
     useEffect(() => {
         if (properties.length) {
