@@ -1,0 +1,171 @@
+.header, .footer {
+  background-color: #d6d5d5;
+  padding: 10px;
+  text-align: center;
+}
+
+.footer {
+  margin-top: 14em;
+}
+
+h3.title {
+  text-align: center;
+  padding: 50px 15px 60px;
+  margin: 0;
+}
+
+.filters {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+  margin-bottom: 20px;
+}
+
+.filters select.form-control {
+  border: none;
+}
+
+.filters select.form-control:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.filters select {
+  border: 1px solid silver;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-right: 25px;
+  background: url('./assets/images/filter-arrow.png');
+  background-repeat: no-repeat;
+  background-position: 95% 42%;
+}
+
+.filters span {
+  padding: .375rem .75rem;
+  display: inline-block;
+}
+
+.properties-list a{
+  color: #000;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+a:hover{
+  color: #000 !important;
+  text-decoration: none !important;
+}
+
+.property-attributes {
+  padding: 20px 0px;
+}
+
+.property-attributes p{
+  margin: 0;
+}
+
+.property-img img{
+  height: 250px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.property-price {
+  font-weight: 700;
+}
+
+.details-icon {
+  padding: 20px 0px;
+  border-bottom: 1px solid #ededed;
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+.details-icon svg:first-child {
+  margin-right: 10px;
+}
+
+.property-price span {
+  font-weight: 400;
+  color: #565656;
+  font-size: 14px;
+}
+
+.property-summary p {
+  font-weight: 400;
+  color: #565656;
+  margin: 0;
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+.property-summary a {
+  color: #ffc400;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.btn-contact {
+  margin: 10px 0;
+  padding: 10px 20px !important;
+  width: 100%;
+  text-transform: uppercase;
+  background: #000 !important;
+  border-radius: 0 !important;
+}
+
+.property-attributes h3 {
+  font-size: 23px;
+  padding: 0px 0px 20px;
+  border-bottom: 1px solid #ededed;
+}
+
+td {
+  padding: 5px !important;
+}
+
+.property-attributes tr td:first-child {
+  padding-left: 0px;
+  font-weight: 700;
+}
+
+.property-attributes p {
+  font-size: 14px;
+}
+
+.negotiator-details {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.negotiator-details img {
+  width: 100px;
+  padding-right: 20px;
+}
+
+.negotiator-details h6 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.negotiator-details p, .negotiator-details span {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.negotiator-details p {
+  margin-bottom: 5px;
+}
+
+.google-map {
+  position: relative;
+  height: 100%;
+  margin-bottom: 10px;
+}
+
+.property-details {
+  padding: 15px 0px;
+}
